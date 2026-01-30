@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CosmOracle | Jeevan Ka GPS</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --bg:#0b1020;
+      --bg-soft:#121734;
+      --card:#141a3a;
+      --text:#e5e7eb;
+      --muted:#9ca3af;
+      --purple:#7c83ff;
+      --cyan:#4fd1c5;
+      --gold:#f5c97a;
+    }
+
+    *{margin:0;padding:0;box-sizing:border-box}
+
+    body{
+      font-family:'Inter',sans-serif;
+      background:radial-gradient(circle at top, var(--bg-soft), var(--bg));
+      color:var(--text);
+      line-height:1.65;
+    }
+
+    a{text-decoration:none;color:inherit}
+
+    section{padding:90px 8%}
+    h1,h2,h3{font-weight:500}
+
+    /* Buttons */
+    .btn{
+      display:inline-block;
+      padding:14px 30px;
+      border-radius:999px;
+      background:linear-gradient(135deg,var(--purple),var(--cyan));
+      color:#000;
+      font-weight:500;
+      box-shadow:0 0 25px rgba(124,131,255,.35);
+      transition:.25s ease;
+    }
+    .btn:hover{transform:translateY(-2px)}
+
+    /* Header */
+    header{
+      position:sticky;top:0;z-index:20;
+      padding:22px 8%;
+      background:rgba(11,16,32,.65);
+      backdrop-filter:blur(12px);
+      display:flex;align-items:center;justify-content:space-between;
+    }
+    .logo{font-weight:600;letter-spacing:1px}
+
+    /* Hero */
+    .hero{min-height:90vh;display:flex;flex-direction:column;justify-content:center;gap:22px}
+    .hero h1{font-size:50px}
+    .hero .subtitle{color:var(--gold);font-size:18px}
+    .hero p{max-width:540px;color:var(--muted)}
+
+    /* Layout helpers */
+    .grid{display:grid;gap:26px}
+    .card{
+      background:linear-gradient(180deg,rgba(255,255,255,.05),rgba(255,255,255,.015));
+      border-radius:22px;
+      padding:30px;
+      box-shadow:0 0 35px rgba(0,0,0,.45);
+    }
+
+    /* Team */
+    .team-grid{grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+
+    /* Services */
+    .services-grid{grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+    .price{color:var(--gold);font-size:22px;margin:10px 0}
+    .popular{outline:2px solid var(--purple)}
+
+    /* Steps */
+    .steps{grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
+
+    /* Trust strip */
+    .trust{display:flex;flex-wrap:wrap;gap:24px;color:var(--muted)}
+
+    /* Footer */
+    footer{
+      text-align:center;
+      padding:45px 8%;
+      color:var(--muted);
+      font-size:14px
+    }
+
+    @media(max-width:600px){
+      section{padding:70px 6%}
+      .hero h1{font-size:38px}
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo">◯ CosmOracle</div>
+  <a class="btn" href="https://docs.google.com/forms/d/e/1FAIpQLSfuv91hc6-bcuPEzf665cKhWKDo4hzsPONu3xhUbCFaHk4Esw/viewform?usp=dialog" target="_blank">Book Your Reading</a>
+</header>
+
+<section class="hero">
+  <h1>CosmOracle</h1>
+  <div class="subtitle">Jeevan Ka GPS</div>
+  <p>Clear direction for career, life, and timing — without fear or confusion.</p>
+  <a class="btn" href="https://docs.google.com/forms/d/e/1FAIpQLSfuv91hc6-bcuPEzf665cKhWKDo4hzsPONu3xhUbCFaHk4Esw/viewform?usp=dialog" target="_blank">Book Your Reading</a>
+</section>
+
+<section>
+  <h2>About CosmOracle</h2>
+  <p style="max-width:760px;margin-top:16px;color:var(--muted)">
+    CosmOracle is an astrology and intuitive guidance platform by <b>Niyati–Nivriti</b>, created to help individuals gain clarity during important life and career decisions. The approach blends Vedic astrology, intuitive insight, and practical thinking — focused on guidance, not dependency. Astrology here is used to empower, not to create fear or confusion.
+  </p>
+</section>
+
+<section>
+  <h2>Our Team</h2>
+  <div class="grid team-grid" style="margin-top:32px">
+    <div class="card">
+      <h3>Saurabh</h3>
+      <div class="price">Lead Astrologer & Psychic Guide</div>
+      <p class="muted">Saurabh specializes in career clarity, placement guidance, and timing insights. His approach is honest, grounded, and focused on helping individuals move forward with confidence.</p>
+    </div>
+    <div class="card">
+      <h3>Atul Anand</h3>
+      <div class="price">Astrologer & Psychic Guide</div>
+      <p class="muted">Atul Anand provides intuitive and astrological insights to help clients understand their current phase in a calm, balanced, and practical way.</p>
+    </div>
+    <div class="card">
+      <h3>Vijay</h3>
+      <div class="price">Accounts Handler</div>
+      <p class="muted">Vijay manages booking records and account coordination to ensure smooth and transparent operations.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Choose Your Plan</h2>
+  <p style="margin-top:8px;color:var(--muted)">Simple plans. Clear guidance. No confusion.</p>
+
+  <div class="grid services-grid" style="margin-top:34px">
+    <div class="card">
+      <h3>Placement / Job Insights</h3>
+      <div class="price">₹199</div>
+      <p class="muted">Upcoming job or placement guidance with opportunity timing and preparation tips.</p>
+      <p class="muted">Duration: 10–12 minutes</p>
+      <a class="btn" target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSfuv91hc6-bcuPEzf665cKhWKDo4hzsPONu3xhUbCFaHk4Esw/viewform?usp=dialog">Select Plan</a>
+    </div>
+
+    <div class="card popular">
+      <h3>Quick Clarity</h3>
+      <div class="price">₹221 · Most Popular</div>
+      <p class="muted">One focused question with honest insight into your current phase.</p>
+      <p class="muted">Duration: 8–10 minutes</p>
+      <a class="btn" target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSfuv91hc6-bcuPEzf665cKhWKDo4hzsPONu3xhUbCFaHk4Esw/viewform?usp=dialog">Select Plan</a>
+    </div>
+
+    <div class="card">
+      <h3>Life & Career</h3>
+      <div class="price">₹351</div>
+      <p class="muted">Career or studies growth direction with insight into the next 6–12 months.</p>
+      <p class="muted">Duration: 15–18 minutes</p>
+      <a class="btn" target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSfuv91hc6-bcuPEzf665cKhWKDo4hzsPONu3xhUbCFaHk4Esw/viewform?usp=dialog">Select Plan</a>
+    </div>
+
+    <div class="card">
+      <h3>Future & Timing</h3>
+      <div class="price">₹501</div>
+      <p class="muted">Career and money opportunity periods with one major block explained.</p>
+      <p class="muted">Duration: 25–30 minutes</p>
+      <a class="btn" target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSfuv91hc6-bcuPEzf665cKhWKDo4hzsPONu3xhUbCFaHk4Esw/viewform?usp=dialog">Select Plan</a>
+    </div>
+  </div>
+
+  <p style="margin-top:26px;color:var(--muted)">
+    All plans are one-time sessions. No subscriptions. No auto-renewals. No pressure.
+  </p>
+</section>
+
+<section>
+  <h2>How It Works</h2>
+  <div class="grid steps" style="margin-top:30px">
+    <div class="card">Step 1: Fill the registration form</div>
+    <div class="card">Step 2: Details are reviewed by the team</div>
+    <div class="card">Step 3: Session is confirmed and conducted online</div>
+  </div>
+</section>
+
+<section>
+  <h2>Book Your Session</h2>
+  <p style="margin:12px 0;color:var(--muted)">Fill a simple registration form to request your session.</p>
+  <a class="btn" target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSfuv91hc6-bcuPEzf665cKhWKDo4hzsPONu3xhUbCFaHk4Esw/viewform?usp=dialog">Proceed to Registration Form</a>
+  <p style="margin-top:14px;color:var(--muted)">All sessions are private and confidential.</p>
+</section>
+
+<section>
+  <h2>Share Your Experience</h2>
+  <p style="margin:10px 0;color:var(--muted)">Your feedback helps others find clarity.</p>
+  <a class="btn" target="_blank" href="https://forms.gle/2k7Es7MTPSaLBx3b6">Give Review 🌟</a>
+</section>
+
+<section>
+  <div class="trust">
+    <div>• 200+ clients guided</div>
+    <div>• Honest, fear-free guidance</div>
+    <div>• Online & confidential sessions</div>
+  </div>
+</section>
+
+<footer>
+  <div style="margin-bottom:6px">◯ CosmOracle</div>
+  © 2026 CosmOracle by Niyati–Nivriti. All Rights Reserved.
+</footer>
+
+</body>
+</html>
